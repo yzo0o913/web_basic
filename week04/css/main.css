@@ -1,0 +1,50 @@
+/* COMMON */
+
+body {
+    background : #f6f5f0;
+}
+
+.material-icons {
+    color: #f6f5f0;
+    font-size : 36px;
+    cursor : pointer;
+}
+
+
+/* HEADER */
+
+header {
+    background : #000;
+    height : 60px;
+    width : 100%;
+    position : fixed;
+    display : flex;
+    align-items : center;
+    padding: 0 15px;
+
+}
+
+header>.material-icons {
+    position: absolute;
+}
+
+header #btn--open {
+    display : block;
+}
+
+header #btn--close {
+    display : none;
+}
+
+/* NAV */
+
+nav {
+    top : 67px;
+    width : 300px;
+    height : calc(100% - 60px);
+    background : #000;
+    position: absolute;
+    transform : translateX(-100%);
+    transition: 1s ;
+    
+}
