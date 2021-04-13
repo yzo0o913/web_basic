@@ -25,6 +25,7 @@ img {
 ol, ul {
     list-style : none;
 }
+
 /* HEADER */
 
 header {
@@ -246,7 +247,7 @@ input::placeholder {
     color: #fff;
   }
 
-/* Contents */
+/* CONTENTS */
 
 .contents {
     min-height: auto;
