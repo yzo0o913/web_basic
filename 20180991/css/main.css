@@ -198,7 +198,7 @@ header .header--right {
     display : block;
 }
 .header-profile:hover .header-profile-name{
-    color: #999;
+    color: #ccc;
 }
 .header-profile:hover {
     cursor: pointer;
