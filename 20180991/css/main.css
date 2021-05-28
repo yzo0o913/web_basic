@@ -53,7 +53,7 @@ header .header--left {
     float : left;
     width : 120px;
     height : 34px;
-    margin-left : 60px;
+    margin-left : 50px;
     margin-top : 20px;
     position : relative;
 }
@@ -81,7 +81,7 @@ header .header--left {
 
 .trigger {
     margin-top : 30px;
-    margin-left : 60px;
+    margin-left : 50px;
     width: 30px;
     height: 15px;
     position : relative;
@@ -251,7 +251,7 @@ input::placeholder {
 
 .contents {
     min-height: auto;
-    padding-top : 120px;
+    padding-top : 100px;
 }
 
 .contents .contents-single-row{
@@ -261,18 +261,117 @@ input::placeholder {
     height: 250px;
 }
 
+.contents-name {
+    font-size: 1.2em;
+    font-weight: 700;
+    margin : 0 0 .5em 0 ;
+}
+
+/* 각각 row hover 시 그에 맞는 스크롤 이미지를 나타나게 하기 위해 각각 스타일 지정*/
+.contents-single-row:hover .first{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .first1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .second{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .second1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .third{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .third1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .fourth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .fourth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .fifth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .fifth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .sixth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .sixth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .seventh{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .seventh1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .eighth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .eighth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .ninth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .ninth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+.contents-single-row:hover .tenth{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_left_hover.png);
+}
+.contents-single-row:hover .tenth1{
+    background-image: url(https://assets.nflxext.com/ffe/siteui/akira/fallback/paginate_right_hover.png);
+}
+
+.paginate-lomo-left, .paginate-lomo-right {
+    position: absolute;
+    top: 1.7em;
+    bottom: 0px;
+    background-color: #141414;
+    opacity: 0.5;
+    zoom: 1;
+    background-repeat: no-repeat;
+    background-position: 50% 3.5em;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.is-gutter {
+    width: 60px;
+    margin-left: -60px;
+    height: 150px;
+}
+
+.is-gutter2 {
+    width: 60px;
+    height: 150px;
+    margin-top: 1px;
+    margin-left: 87.6%;
+    position: absolute;
+}
+
 .lomo {
-    overflow-x: hidden;
+    overflow-x: scroll;
     overflow-y : hidden;
     clear: both;
     white-space: nowrap;
     margin : 0 0 1em 0;
     overflow: -moz-scrollbars-none;
     padding-right : 60px;
-    width: 100%;
+    width: 87%;
     height : 150px;
     position : relative;
     float: left;
+}
+
+.lomo::-webkit-scrollbar{
+    display:none;
 }
 
 .lomo .watch-title {
@@ -304,8 +403,13 @@ input::placeholder {
     background-size: cover;
 }
 
+.title-boxart:hover {
+    display: inline-block;
+}
+
 .watch-page-link-availability {
     display: block;
+    position: relative;
     color: #999;
     font-size: 0.9em;
     padding: .2em 0;
@@ -328,7 +432,7 @@ input::placeholder {
     position: absolute;
     bottom: 0px;
     left: 0px;
-    display: none;
+    /* display: none; */
     width: 100%;
     height: 2.2em;
     background: #141414;
@@ -336,17 +440,6 @@ input::placeholder {
 
 .watch-page-link-maturity, .watch-page-link-year {
     padding-right: 0.8em;
-}
-
-
-.title-boxart:hover .watch-icon{
-    display:inline-block;
-}
-
-.contents-name {
-    font-size: 1.2em;
-    font-weight: 700;
-    margin : 0 0 .5em 0 ;
 }
 
 /* FOOTER */
@@ -390,19 +483,15 @@ ol {
     padding-inline-start: 0px;
 }
 
+/* ScrollToTop */
+
 .inner {
-    /* 너비 값을 주고 margin의 좌우값을 auto로 설정하여 본 요소를 가운데 정렬합니다 */
     width: auto;
-    /* scrollToTop 요소가 잘 작동하는지 확인하고자 */
-    /* 페이지를 길게 만들기 위해 inner에 높이를 지정했습니다 */
     height: auto;
-    /* inner의 하위 요소에 margin값을 설정하는 경우 잘 적용되도록 */
-    /* display 속성은 flex로 설정합니다 */
     display: flex;
     flex-direction: column;
 }
 
-/* 둥둥 뜨는 애니메이션 */
 
 @keyframes float {
     0% {
@@ -416,16 +505,13 @@ ol {
     }
 }
 
-/* 페이지 내에 scrollToTop 기능을 갖는 모든 요소는 둥둥이로 만듭니다 */
 .scrollToTop {
     animation: float 6s ease infinite;
     width: 100px;
-    /* 블록 속성을 가진 요소로 만듭니다 */
     display: inline-block;
-    /* margin-top을 auto로 설정하면 페이지 맨 아래에 찰싹 붙는 요소를 쉽게 만들 수 있습니다 */
-    /* 단 부모 요소에 display: flex가 있어야 합니다 */
-    margin-top: auto;
-    /* 부모 요소의 영역 내에서 본 요소가 가장 우측에 위치하도록 합니다 */
+    margin-top: -100px;
     margin-left: auto;
     cursor: pointer;
+    padding-right: 60px;
+    margin-bottom: 30px;
 }
